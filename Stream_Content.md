@@ -9,7 +9,7 @@ Script for stream to be made into a repo of instructions links and such.
 
   - Talk about what a virtual machine is,
   - chat about different ways this could be set up
-  - chat about if you arnt using a vm and that the rest of the stream is not dirivitive of useing a VM it is purely for ease of the Stream that i am doing VM
+  - chat about if you aren't using a vm and that the rest of the stream is not derivative of using a VM it is purely for ease of the Stream that i am doing VM
   -Chat about if they want to use WSL2 and UBUNTU then they cant do this.... see school of youtube for that.
 
     ### steps
@@ -19,34 +19,34 @@ Script for stream to be made into a repo of instructions links and such.
     1. Open Oracle VM.
     1. select New button the one with the big blue explosion
     1. Title your box and select where it wants to live on your system,
-    you will want to select Type of Linux and Verson of Ubuntu 64bit. if you are planing on installing mint as we are in the demo. then click next.
-    1. set your mem allocation for this virtual machine. i recomned atleast 2048mb or more if useing this for development.
-    1. keep the settin of create Virtual hard disk and click create this will create a virtual version of a hdd as a peramiter of the file and set it up with dedicated space or adjusting space depending on the settngs
+    you will want to select Type of Linux and Version of Ubuntu 64bit. if you are planing on installing mint as we are in the demo. then click next.
+    1. set your mem allocation for this virtual machine. i recommend at least 2048mb or more if using this for development.
+    1. keep the setting of create Virtual hard disk and click create this will create a virtual version of a hdd as a parameter of the file and set it up with dedicated space or adjusting space depending on the settings
     1. you want a VDI in most circumstances.
-    1. keep dynamically allocated : this allows the vm to grow up to a cirtin size as you use it instead of taking it all at once
+    1. keep dynamically allocated : this allows the vm to grow up to a certain size as you use it instead of taking it all at once
     1. then set how much space you want your computer to have.
     1. next we open settings and change a few things to make sure linux runs smoothly as a vm.
-        - general > advanced (change shared clipboard and DnD to bidirectional to allow you to move files around eaisly between hoast and vm.... ONLY do this if you are developing Not PENTESTING OR ORTHER SECURITY THNG can be a vuln to get to your files.)
-        - system > motherboard ( un check flopy and move it down , then move HD above optical.)
-        - system > Processor ( up it to 2 cpus and enable PAE/NX)
+        - general > advanced (change shared clipboard and DnD to bidirectional to allow you to move files around easily between host and vm.... ONLY do this if you are developing Not PENTESTING OR OTHER SECURITY THING can be a vulnerability to get to your files.)
+        - system > motherboard ( un check floppy and move it down , then move HD above optical.)
+        - system > Processor ( up it to 2 CPUs and enable PAE/NX)
         - display > screen Video Mem all the way up so that your can render your screen details well. and make sure 3D Acc is OFF
-        - storage > click on the disk then on the right there is annother little disk click that and seleckt create Virtual optical Disk.
-        add, and creat one for mint iso in your downloads folder. select it and close the window. now you can boot the Machine
+        - storage > click on the disk then on the right there is another little disk click that and select create Virtual optical Disk.
+        add, and create one for mint iso in your downloads folder. select it and close the window. now you can boot the Machine
 
 ## Install Linux Mint on New machine
 
-- Talk about linux a bit. while workign through this seciton.
-- this is a good time to talk about diferent versions of linux
+- Talk about linux a bit. while working through this section.
+- this is a good time to talk about different versions of linux
 - this is also a good place to chat about this being one way of many to - do this.
-- Have goot time fill install takes a min or 2 and want to do whole thing live .
+- Have good time fill install takes a min or 2 and want to do whole thing live .
 
   ### steps
 
     1. boot machine
     1. select boot drive
     1. start linux mint (This boots to a graphical desktop with some icons and an install mint iso.)
-    1. Runn the iso
-    1. follow the insturctions provided by mint some setting you might want to change are:
+    1. Run the iso
+    1. follow the instructions provided by mint some setting you might want to change are:
         - language
         - you want Multimedia codecs this allows it to work with special media types.
         - Time zone
@@ -54,7 +54,7 @@ Script for stream to be made into a repo of instructions links and such.
     1. set your name computer name and password and encrypt home
     1. once mint is installed reboot the Virtual machine
 
-## Setup some basic JS develpment tools
+## Setup some basic JS development tools
 
 - first steps for linux mint..
 - talk about SUDO command and APT command
@@ -67,7 +67,7 @@ Script for stream to be made into a repo of instructions links and such.
 - eslint (spell check for code)
 - getting Slack / Discord / other basic programs up.
 
-  ### Initial linux gui steps
+  ### Initial linux GUI steps
 
     1. Start in the welcome box and go to first steps pick color and theme.
     1. Open up driver manager and run the updater
@@ -78,16 +78,16 @@ Script for stream to be made into a repo of instructions links and such.
 
     1. open up terminal
     1. run command `sudo apt=get update && sudo apt-get upgrade -y` (THIS WILL TAKE TIME)
-    1. once fininshed run `sudo apt autoremove`
-    1. now the command `sudo apt-get install build-essential -y` (this brings in some requiremnets for you system to handle code programns like node and SQL)
+    1. once finished run `sudo apt autoremove`
+    1. now the command `sudo apt-get install build-essential -y` (this brings in some requirements for you system to handle code programs like node and SQL)
     1. run `curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash` to get NVM downloaded to linux and installed
     1. the last command requires us to restart terminal so do that or run `source ~/.bashrc`
     1. now we can check NVM version with `nvm --version` (should be 0.3.0 or higher)
     1. Next we use nvm to install node.js we want node 12 so use the command `nvm install 12`
-    1. check that node installed right `node --version` (12.22 or highter)
+    1. check that node installed right `node --version` (12.22 or higher)
     1. and you can check if node works by starting and doing some math. `node` then `num+num` if the math is right node is working
     1. You need Git to manage code repos so `sudo apt install git`
-    1. we will want Tree `sudo apt install tree` lets us print grapical file trees in terminal
+    1. we will want Tree `sudo apt install tree` lets us print graphical file trees in terminal
     1. we will want live-server to demo our website code on our system `npm install -g live-server`
     1. we will want eslint for checking our code for simple mistakes `npm install -g eslint`
 
@@ -108,15 +108,15 @@ Script for stream to be made into a repo of instructions links and such.
 
     #### VS CODE
 
-    like with chrome you can go hunt it down online at their site or run this command to install it from the terminal little more complex as there are dependicys but not too bad lets go
+    like with chrome you can go hunt it down online at their site or run this command to install it from the terminal little more complex as there are dependencies but not too bad lets go
 
     - update the system `sudo apt update`
-    - get the dependicies installed `sudo apt install software-properties-common apt-transport-https wget`
+    - get the dependencies installed `sudo apt install software-properties-common apt-transport-https wget`
     - get the key from MS `wget -q https://packages.microsoft.com/keys/microsoft/asc -O- | sudo apt -key add -`
     - enable Vs Code REPO `sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"`
     - now install from there using `sudo apt install code`
 
-    inside VS code you should add the following Extentions (RECOMENDATIONS FROM RAVENMOORE)
+    inside VS code you should add the following Extensions (RECOMMENDATIONS FROM RAVENMOORE)
       - live server
       - ESLint
       - Markdown Lint
@@ -124,11 +124,11 @@ Script for stream to be made into a repo of instructions links and such.
       - Debugger for Chrome (SUPER TOOL)
       - terminal for Ubuntu (term inside code window)
 
-  ### tweek terminal for dev work
+  ### tweak terminal for dev work
 
-  on linux mint the hidden file .bashrc controlls how your terminal works. i have some tweeks that i like to use and i have provided the file... this adds auto complete and repo finding and status.
+  on linux mint the hidden file .bashrc controls how your terminal works. i have some tweaks that i like to use and i have provided the file... this adds auto complete and repo finding and status.
 
   - first backup your current bash file.. `mv ~/.bashrc .bashrc.bak`
   - now run `code .bashrc` to open the bash file
   - you can copy the contents of template over this file and then save
-  - restart terminal and you should have slightly different prompt with different or less giberish.
+  - restart terminal and you should have slightly different prompt with different or less gibberish.
